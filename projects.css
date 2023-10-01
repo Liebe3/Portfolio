@@ -1,0 +1,131 @@
+.projects {
+  min-height: 175vh;
+  width: 100%;
+}
+
+.projects .project {
+  text-align: center;
+  padding-top: 30px;
+  color: #ea6c4b;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+
+.project-cotaniner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background: red; */
+  height: 70%;
+  width: 100%;
+}
+
+.projectImage-container {
+  height: 90%;
+  width: 90%;
+  border-radius: 20px;
+  margin-left: 20px;
+  overflow: hidden;
+  filter: drop-shadow(-1px 57px 300px #000000);
+}
+
+.projectImage-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  padding: 20px;
+  transition: transform 0.5s 0.16s;
+}
+
+.projectImage-container img:hover {
+  transition: 0.5s 0.16s;
+  transform: scale(1.1);
+}
+
+.projectDescription-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.projectDescription-container h1 {
+  text-align: center;
+  padding: 0px 0 20px 0;
+  color: #ea6c4b;
+}
+
+.projectDescription-container p {
+  /* border: 2px solid whitesmoke; */
+  width: 80%;
+}
+
+@media screen and (max-width: 780px) {
+  .project-cotaniner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  .projectImage-container {
+    margin-left: 0;
+  }
+
+  .projectDescription-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
+  }
+
+  .projectDescription-container h1 {
+    text-align: center;
+    padding: 0px 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .projectImage-container {
+    height: 30%;
+    width: 100%;
+  }
+  
+  .projectImage-container img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    transition: transform 0.5s 0.16s;
+    object-fit: contain;
+    border-top-left-radius: 10px 10px;
+  }
+
+  .projectDescription-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 60%;
+    width: 100%;
+  }
+
+  .projectDescription-container h1 {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-size: 20px;
+  }
+
+  .projectDescription-container p {
+    width: 100%;
+    padding: 0 10px;
+    border-top: 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+}
