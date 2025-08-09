@@ -2,13 +2,26 @@
   width: 100%;
   padding: 20px;
 }
-h1 a{
+
+h1{
+  text-align: center;
+}
+
+h1 a {
   text-decoration: none;
   color: #ea6c4b;
 }
+
+h1 span {
+  font-size: 20px;
+  color: #20305a;
+  font-weight: bold;
+}
+
 a {
   text-decoration: none;
 }
+
 .projects .project {
   text-align: center;
   padding-top: 30px;
@@ -73,12 +86,6 @@ a {
   font-size: 24px;
 }
 
-.personal-project {
-  font-size: 16px;
-  color: #666;
-  font-weight: normal;
-}
-
 .projectDescription-container p {
   line-height: 1.6;
   color: #444;
@@ -103,7 +110,6 @@ a {
 }
 
 @media screen and (max-width: 400px) {
-
   .projectImage-container {
     height: 30%;
     width: 100%;
