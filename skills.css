@@ -1,67 +1,126 @@
 .skills {
-  min-height: 100vh;
+
   width: 100%;
+  padding: 40px 20px;
 }
 
 .skills h1 {
   text-align: center;
   padding-top: 30px;
+  margin-bottom: 50px;
   color: #ea6c4b;
   letter-spacing: 5px;
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
+  position: relative;
+}
+
+.skills h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #ea6c4b;
 }
 
 .skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  row-gap: 50px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.skill {
-  width: 50%;
-}
-.languages {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.left-skills {
-  height: 50%;
-  width: 50%;
-}
-
-.right-skills {
-  height: 50%;
-  width: 50%;
-}
-.languages img {
-  height: 150px;
-  width: 45%;
+  gap: 60px;
   padding: 20px;
 }
 
-@media screen and (max-width: 800px) {
+.skill {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.skill p {
+  line-height: 1.8;
+  text-align: center;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+.languages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-skills,
+.right-skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 15px;
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.languages img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  display: block; /* Ensures proper centering */
+  margin: 0 auto; /* Additional horizontal centering */
+}
+
+.languages img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1024px) {
+  .languages {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .skill {
     width: 80%;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
+  .languages {
+    grid-template-columns: 1fr;
+  }
+
   .skill {
-    width: 100%;
-    padding: 20px;
+    width: 90%;
   }
 
   .languages img {
-    height: 100px;
-    width: 40%;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skill {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .languages img {
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+  }
+
+  .left-skills,
+  .right-skills {
+    gap: 10px;
     padding: 10px;
   }
 }
