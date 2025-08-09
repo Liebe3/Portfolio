@@ -2,7 +2,13 @@
   min-height: 175vh;
   width: 100%;
 }
-
+h1 a{
+  text-decoration: none;
+  color: #ea6c4b;
+}
+a {
+  text-decoration: none;
+}
 .projects .project {
   text-align: center;
   padding-top: 30px;
@@ -91,12 +97,11 @@
 }
 
 @media screen and (max-width: 400px) {
-
   .projectImage-container {
     height: 30%;
     width: 100%;
   }
-  
+
   .projectImage-container img {
     height: 100%;
     width: 100%;
