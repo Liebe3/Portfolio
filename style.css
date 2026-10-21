@@ -201,14 +201,22 @@ nav {
 }
 
 nav .logo {
+  display: inline-flex;
+  align-items: center;
   color: white;
   margin-left: 30px;
   cursor: pointer;
+  text-decoration: none;
 
   animation-name: logo;
   animation-timing-function: 3s;
   animation-duration: 10s;
   animation-iteration-count: infinite;
+}
+
+nav .logo:focus-visible {
+  outline: 3px solid #ea6c4b;
+  outline-offset: 4px;
 }
 
 @keyframes logo {
