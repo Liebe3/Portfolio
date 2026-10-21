@@ -4,7 +4,7 @@ A personal portfolio showcasing my skills, freelance and professional work, and 
 
 ## Features
 
-- Responsive home, skills, projects, and contact sections
+- Responsive home, skills, projects, contact, and footer sections
 - Skills and tools from my CV, grouped by category with labeled icons
 - Project cards with expandable descriptions and a **Show more projects** button
 - Links to public project repositories and live demos where available
@@ -19,7 +19,7 @@ Clone or download this repository, then open `index.html` in a browser. There is
 | Path | Purpose |
 | --- | --- |
 | `index.html` | Page content and external service links |
-| `style.css`, `about.css`, `skills.css`, `projects.css`, `contact.css` | Section styles and responsive layouts |
+| `style.css`, `about.css`, `skills.css`, `projects.css`, `contact.css`, `footer.css` | Section styles and responsive layouts |
 | `porfolio.js` | Mobile navigation and project expand/collapse behavior |
 | `images/` | Profile, project, and contact images |
 | `assets/JallenJPortugal.pdf` | CV used by the **Download CV** button |
