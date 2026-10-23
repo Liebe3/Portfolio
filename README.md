@@ -22,7 +22,7 @@ Clone or download this repository, then open `index.html` in a browser. There is
 | `style.css`, `about.css`, `skills.css`, `projects.css`, `contact.css`, `footer.css` | Section styles and responsive layouts |
 | `porfolio.js` | Mobile navigation and project expand/collapse behavior |
 | `images/` | Profile, project, and contact images |
-| `assets/JallenJPortugal.pdf` | CV used by the **Download CV** button |
+| `assets/JallenPortugal.pdf` | CV used by the **Download CV** button |
 
 To update the portfolio, edit the content in `index.html` and the matching section stylesheet. Add new image files to `images/` and update their paths in the HTML. Keep the CV link in `index.html` in sync if you replace or rename the PDF.
 
